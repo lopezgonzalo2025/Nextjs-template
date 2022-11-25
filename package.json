@@ -2,11 +2,18 @@
   "name": "nextjs-template",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Lopez Gonzalo",
+    "email": "lopezgonzalo.jsx@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prettier": "prettier --check \"./**/*.{ts,tsx,js,jsx,css,scss,md}\" --ignore-path .gitignore",
+    "prettier:fix": "prettier --write \"./**/*.{ts,tsx,js,jsx,css,scss,md}\" --ignore-pattern node_modules/"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -15,6 +22,7 @@
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
+    "prettier": "^2.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
