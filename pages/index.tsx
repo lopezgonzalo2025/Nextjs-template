@@ -16,9 +16,5 @@ export default function Home() {
     }
   })
 
-  return (
-    <>
-      <Home_1 />
-    </>
-  )
+  return <Home_1 />
 }
