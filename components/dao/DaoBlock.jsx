@@ -101,7 +101,7 @@ const DaoBlock = () => {
       {/* End What’s your DAO Idea?
 Let’s chat. */}
     </>
-  );
-};
+  )
+}
 
-export default DaoBlock;
+export default DaoBlock

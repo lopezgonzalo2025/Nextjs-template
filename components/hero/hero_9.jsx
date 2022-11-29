@@ -1,33 +1,33 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero_9 = () => {
   const heroImgContent = [
     {
       id: 1,
-      positionClass: "bottom-[17%] left-12",
-      bgClass: "bg-[#8247E5]/50",
-      icon: "/images/chains/polygon@2x.png",
-      name: "Polygon",
-      currencyMeta: "PY",
+      positionClass: 'bottom-[17%] left-12',
+      bgClass: 'bg-[#8247E5]/50',
+      icon: '/images/chains/polygon@2x.png',
+      name: 'Polygon',
+      currencyMeta: 'PY'
     },
     {
       id: 2,
-      positionClass: "right-8 top-1/2",
-      bgClass: "bg-[#62688F]/50",
-      icon: "/images/chains/ethereum@2x.png",
-      name: "Ethereum",
-      currencyMeta: "ETH",
+      positionClass: 'right-8 top-1/2',
+      bgClass: 'bg-[#62688F]/50',
+      icon: '/images/chains/ethereum@2x.png',
+      name: 'Ethereum',
+      currencyMeta: 'ETH'
     },
     {
       id: 3,
-      positionClass: "right-1/3 top-1/4",
-      bgClass: "bg-[#000000]/50",
-      icon: "/images/chains/bitcoin@2x.png",
-      name: "Bitcoin",
-      currencyMeta: " BTC",
-    },
-  ];
+      positionClass: 'right-1/3 top-1/4',
+      bgClass: 'bg-[#000000]/50',
+      icon: '/images/chains/bitcoin@2x.png',
+      name: 'Bitcoin',
+      currencyMeta: ' BTC'
+    }
+  ]
   return (
     <>
       {/* <!-- Hero --> */}
@@ -93,7 +93,7 @@ const Hero_9 = () => {
       </section>
       {/* <!-- end hero --> */}
     </>
-  );
-};
+  )
+}
 
-export default Hero_9;
+export default Hero_9

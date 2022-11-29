@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Scrollbar, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import { features_carousel_data } from "../../data/features_carousel_data";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { features_carousel_data } from '../../data/features_carousel_data'
+import Image from 'next/image'
 
 const Features_carousel = () => {
   return (
@@ -14,24 +14,24 @@ const Features_carousel = () => {
         slidesPerView="auto"
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 2000
         }}
         breakpoints={{
           240: {
-            slidesPerView: 1,
+            slidesPerView: 1
           },
           565: {
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           775: {
-            slidesPerView: 3,
-          },
+            slidesPerView: 3
+          }
         }}
         pagination={{ clickable: true }}
         className=" card-slider-4-columns !py-5 !overflow-visible"
       >
         {features_carousel_data.map((item) => {
-          const { id, img, title, desc } = item;
+          const { id, img, title, desc } = item
           return (
             <SwiperSlide className="text-white" key={id}>
               <div className="rounded-2.5xl bg-jacarta-800 p-10">
@@ -46,11 +46,11 @@ const Features_carousel = () => {
                 </div>
               </div>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
     </>
-  );
-};
+  )
+}
 
-export default Features_carousel;
+export default Features_carousel

@@ -1,35 +1,36 @@
-.forum-post-top{
+.forum-post-top {
   display: flex;
-  .author-avatar{
-    img{
+  .author-avatar {
+    img {
       border-radius: 50%;
       margin-right: 15px;
     }
   }
-  .forum-post-author{
-    .author-name{
+  .forum-post-author {
+    .author-name {
       font-size: 16px;
       font-weight: 500;
       color: #1d2746;
-      &:hover{
-        color: #41B782;
+      &:hover {
+        color: #41b782;
       }
     }
-    .forum-author-meta{
+    .forum-author-meta {
       display: flex;
-      span, a{
+      span,
+      a {
         color: #838793;
         font-size: 14px;
       }
-      a:hover{
-        color: #41B782;
+      a:hover {
+        color: #41b782;
       }
-      .author-badge{
-        svg{
+      .author-badge {
+        svg {
           margin-top: -5px;
           margin-right: 5px;
         }
-        i{
+        i {
           margin-right: 5px;
           color: #838793;
         }
@@ -44,10 +45,10 @@
 .action-button-container {
   display: flex;
   justify-content: flex-end;
-  &.action-btns{
+  &.action-btns {
     justify-content: flex-start;
     margin-top: 30px;
-    .action_btn{
+    .action_btn {
       height: 30px;
       font-size: 14px;
       line-height: 30px;
@@ -61,18 +62,18 @@
     font-weight: 500;
     padding: 8px 28px;
     margin-top: 2px;
-    &:hover{
+    &:hover {
       background: #16c9f0;
     }
   }
-  .reply-btn{
+  .reply-btn {
     margin-right: 10px;
   }
-  .too-btn{
+  .too-btn {
     background: #fff;
     border: 1px solid #d0d8dc;
     color: #1d2746;
-    &:hover{
+    &:hover {
       background: #fff;
       border: 1px solid #1d2746;
       color: #1d2746;
@@ -80,80 +81,81 @@
   }
 }
 
-.q-title{
+.q-title {
   display: flex;
   padding: 40px 15px 5px 0;
-  h1{
+  h1 {
     font-size: 22px;
     color: #1d2746;
     line-height: 1.4;
     font-weight: 500;
   }
-  .badge{
+  .badge {
     margin-left: 10px;
     line-height: 1.4;
     margin-top: 2px;
   }
 }
 
-.forum-post-content{
+.forum-post-content {
   padding-left: 62px;
-  .content{
+  .content {
     line-height: 26px;
   }
-  .forum-post-btm{
+  .forum-post-btm {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e8ecee;
     padding-bottom: 30px;
     padding-top: 25px;
-    .taxonomy{
+    .taxonomy {
       font-size: 14px;
-      i, img{
+      i,
+      img {
         margin-right: 10px;
       }
-      a{
+      a {
         color: #838793;
-        &:hover{
-          color: #41B782;
+        &:hover {
+          color: #41b782;
         }
-        &+a{
+        & + a {
           padding-right: 2px;
         }
       }
     }
   }
 }
-.question-icon{
+.question-icon {
   font-size: 50px;
   color: #1d2746;
   margin-right: 15px;
 }
 
 /** === Best Answer === **/
-.best-answer{
+.best-answer {
   background: #f1fdf3;
   padding: 30px 40px 30px 30px;
   margin-top: 60px;
   border-radius: 6px;
-  .accepted-ans-mark{
+  .accepted-ans-mark {
     color: #0abe76;
     font-size: 14px;
     text-align: right;
-    i{
+    i {
       padding-right: 5px;
     }
   }
-  .best-ans-content{
+  .best-ans-content {
     margin-top: 30px;
-    .question-icon{
+    .question-icon {
       margin-top: 10px;
       margin-right: 20px;
     }
-    p{
+    p {
       font-size: 15px;
       line-height: 1.5;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }
@@ -161,27 +163,27 @@
 }
 
 /** === All answer === **/
-.all-answers{
+.all-answers {
   margin-top: 60px;
-  .title{
+  .title {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  .filter-bar{
+  .filter-bar {
     background: #f7f8f9;
     border: 1px solid #eaeeef;
     padding: 10px 30px;
     justify-content: space-between;
     border-radius: 4px;
-    .custom-select{
+    .custom-select {
       box-shadow: none;
-      &:focus{
+      &:focus {
         outline: none;
         box-shadow: 0 0 0 0.2rem transparent;
         border: none;
       }
-      &::after{
+      &::after {
         border-bottom: 1px solid #6b707f;
         border-right: 1px solid #6b707f;
         height: 6px;
@@ -189,19 +191,18 @@
         right: 5px;
       }
     }
-    p{
+    p {
       margin-top: 8px;
       margin-bottom: 0;
       font-size: 14px;
       color: #6b707f;
-
     }
-    .nice-select{
+    .nice-select {
       background: #f7f8f9;
       height: 100%;
       border: 0;
       padding: 0 25px 0 0;
-      .list{
+      .list {
         width: 100px;
       }
       &::-ms-expand {
@@ -210,27 +211,27 @@
     }
   }
 
-  .forum-comment{
+  .forum-comment {
     margin-top: 30px;
-    .comment-content{
+    .comment-content {
       margin-left: 60px;
       margin-top: 10px;
       border-bottom: 1px solid #e8ecee;
       padding-bottom: 28px;
-      p{
+      p {
         font-size: 14px;
         line-height: 1.5;
-        &:last-child{
+        &:last-child {
           margin-bottom: 0;
         }
       }
-      .action-btns{
+      .action-btns {
         margin-top: 20px;
       }
     }
   }
 
-  .pagination-wrapper{
+  .pagination-wrapper {
     background: transparent;
     box-shadow: none;
     margin-top: 15px;
@@ -238,7 +239,7 @@
 }
 
 /** === Forum Sidebar === **/
-.forum_sidebar{
+.forum_sidebar {
   padding-left: 28px;
   font-size: 14px;
   padding-right: 5px;

@@ -1,22 +1,20 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import Image from "next/image";
-import "tippy.js/dist/tippy.css";
-import { bidsData } from "../../data/bids_data";
-import Link from "next/link";
-import Tippy from "@tippyjs/react";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { bidsModalShow } from "../../redux/counterSlice";
-import { useDispatch } from "react-redux";
-import Likes from "../likes";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import Image from 'next/image'
+import 'tippy.js/dist/tippy.css'
+import { bidsData } from '../../data/bids_data'
+import Link from 'next/link'
+import Tippy from '@tippyjs/react'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
+import { bidsModalShow } from '../../redux/counterSlice'
+import { useDispatch } from 'react-redux'
+import Likes from '../likes'
 
 const BidsCarousel = () => {
-  const dispatch = useDispatch();
-  const handleclick = () => {
-    console.log("clicked on ");
-  };
+  const dispatch = useDispatch()
+
   return (
     <>
       <Swiper
@@ -26,39 +24,39 @@ const BidsCarousel = () => {
         loop={true}
         breakpoints={{
           240: {
-            slidesPerView: 1,
+            slidesPerView: 1
           },
           565: {
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           1000: {
-            slidesPerView: 3,
+            slidesPerView: 3
           },
           1100: {
-            slidesPerView: 4,
-          },
+            slidesPerView: 4
+          }
         }}
         navigation={{
-          nextEl: ".bids-swiper-button-next",
-          prevEl: ".bids-swiper-button-prev",
+          nextEl: '.bids-swiper-button-next',
+          prevEl: '.bids-swiper-button-prev'
         }}
         className=" card-slider-4-columns !py-5"
       >
         {bidsData.map((item) => {
           const { id, image, title, bid_number, eth_number, react_number } =
-            item;
+            item
           const itemLink = image
-            .split("/")
+            .split('/')
             .slice(-1)
             .toString()
-            .replace(".jpg", "");
+            .replace('.jpg', '')
           return (
             <SwiperSlide className="text-white" key={id}>
               <article>
                 <div className="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 rounded-2xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg text-jacarta-500">
                   <figure>
                     {/* {`item/${itemLink}`} */}
-                    <Link href={"/item/" + itemLink}>
+                    <Link href={'/item/' + itemLink}>
                       <a>
                         <div className="w-full">
                           <Image
@@ -76,7 +74,7 @@ const BidsCarousel = () => {
                     </Link>
                   </figure>
                   <div className="mt-4 flex items-center justify-between">
-                    <Link href={"/item/" + itemLink}>
+                    <Link href={'/item/' + itemLink}>
                       <a>
                         <span className="font-display text-jacarta-700 hover:text-accent text-base dark:text-white">
                           {title}
@@ -123,7 +121,7 @@ const BidsCarousel = () => {
                 </div>
               </article>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
       {/* <!-- Slider Navigation --> */}
@@ -134,7 +132,7 @@ const BidsCarousel = () => {
         <MdKeyboardArrowRight />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BidsCarousel;
+export default BidsCarousel

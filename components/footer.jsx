@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { footerMenuList, socialIcons } from "../data/footer_data";
+import Link from 'next/link'
+import { footerMenuList, socialIcons } from '../data/footer_data'
 
 const footer = () => {
   return (
@@ -38,7 +38,7 @@ const footer = () => {
               {/* <!-- Socials --> */}
               <div className="flex space-x-5">
                 {socialIcons.map((item) => {
-                  const { id, href, text } = item;
+                  const { id, href, text } = item
                   return (
                     <Link href={href} key={id}>
                       <a
@@ -51,7 +51,7 @@ const footer = () => {
                         </svg>
                       </a>
                     </Link>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -66,7 +66,7 @@ const footer = () => {
                 </h3>
                 <ul className="dark:text-jacarta-300 flex flex-col space-y-1">
                   {single.list.map((item) => {
-                    const { id, href, text } = item;
+                    const { id, href, text } = item
                     return (
                       <li key={id}>
                         <Link href={href}>
@@ -75,7 +75,7 @@ const footer = () => {
                           </a>
                         </Link>
                       </li>
-                    );
+                    )
                   })}
                 </ul>
               </div>
@@ -87,7 +87,7 @@ const footer = () => {
               <span>© {new Date().getFullYear()} Xhibiter — Made by</span>
               <Link href="https://themeforest.net/user/ib-themes">
                 <a className="hover:text-accent dark:hover:text-white">
-                  {" "}
+                  {' '}
                   ib-themes
                 </a>
               </Link>
@@ -113,7 +113,7 @@ const footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default footer;
+export default footer

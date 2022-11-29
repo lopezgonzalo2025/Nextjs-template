@@ -1,14 +1,13 @@
-import Link from "next/link";
-import React from "react";
-import ImageTitle from "../../components/imageTitle";
-import { help_center_data } from "../../data/help_center_data";
-import { accordion_data } from "../../data/help_center_data";
-import Accordion from "../../components/accordion";
-import Head from "next/head";
-import Meta from "../../components/Meta";
+import Link from 'next/link'
+import React from 'react'
+import ImageTitle from '../../components/imageTitle'
+import { help_center_data } from '../../data/help_center_data'
+import { accordion_data } from '../../data/help_center_data'
+import Accordion from '../../components/accordion'
+import Meta from '../../components/Meta'
 
 const Help_center = () => {
-  const bgImage = "/images/page-title/knowledge_base_banner.jpg";
+  const bgImage = '/images/page-title/knowledge_base_banner.jpg'
   return (
     <div>
       <Meta title="Help Center || Xhibiter | NFT Marketplace Next.js Template" />
@@ -34,7 +33,7 @@ const Help_center = () => {
             {/* <!-- Categories --> */}
             <div className="mb-16 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3">
               {help_center_data.map((item) => {
-                const { id, title, text } = item;
+                const { id, title, text } = item
                 return (
                   <Link href="#" key={id}>
                     <a className="dark:border-jacarta-600 dark:bg-jacarta-700 rounded-2lg border-jacarta-100 border bg-white p-6 text-center transition-shadow hover:shadow-lg">
@@ -44,7 +43,7 @@ const Help_center = () => {
                       <p className="dark:text-jacarta-300">{text}</p>
                     </a>
                   </Link>
-                );
+                )
               })}
             </div>
             {/* <!-- end categories --> */}
@@ -55,7 +54,7 @@ const Help_center = () => {
         {/* <!-- end help center --> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Help_center;
+export default Help_center

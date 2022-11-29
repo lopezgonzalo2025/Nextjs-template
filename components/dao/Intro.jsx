@@ -1,5 +1,4 @@
-import Image from "next/image";
-import TradeVolume from "./TradeVolume";
+import TradeVolume from './TradeVolume'
 
 const Intro = () => {
   return (
@@ -40,7 +39,7 @@ const Intro = () => {
       </div>
     </section>
     // <!-- end intro -->
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

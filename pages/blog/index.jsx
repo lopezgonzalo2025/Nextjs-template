@@ -1,17 +1,17 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import News_item from "../../components/blog/news_item";
-import { news_data } from "../../data/news_data";
-import Meta from "../../components/Meta";
+import Link from 'next/link'
+import React, { useState } from 'react'
+import News_item from '../../components/blog/news_item'
+import { news_data } from '../../data/news_data'
+import Meta from '../../components/Meta'
 
 const Blog = () => {
-  const [loadMoreBtn, setLoadMoreBtn] = useState(true);
-  const [data, setdata] = useState(news_data.slice(0, 6));
+  const [loadMoreBtn, setLoadMoreBtn] = useState(true)
+  const [data, setdata] = useState(news_data.slice(0, 6))
 
   const handleLoadMore = () => {
-    setdata(news_data);
-    setLoadMoreBtn(false);
-  };
+    setdata(news_data)
+    setLoadMoreBtn(false)
+  }
   return (
     <>
       <Meta title="Blog || Xhibiter | NFT Marketplace Next.js Template" />
@@ -53,7 +53,7 @@ const Blog = () => {
                     </Link>
                     <span className="dark:text-jacarta-400">in</span>
                     <span className="text-accent inline-flex flex-wrap items-center space-x-1">
-                      <a href="#">{"NFT's"}</a>
+                      <a href="#">NFT's</a>
                       <a href="#">DIGITAL ART</a>
                     </span>
                   </div>
@@ -98,7 +98,7 @@ const Blog = () => {
       </section>
       {/* <!-- end blog --> */}
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

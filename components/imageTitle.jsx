@@ -38,7 +38,7 @@ const ImageTitle = ({ text, image, input }) => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default ImageTitle;
+export default ImageTitle

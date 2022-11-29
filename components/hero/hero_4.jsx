@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const Hero_4 = () => {
   return (
@@ -62,7 +62,7 @@ const Hero_4 = () => {
       </section>
       {/* <!-- end hero --> */}
     </>
-  );
-};
+  )
+}
 
-export default Hero_4;
+export default Hero_4

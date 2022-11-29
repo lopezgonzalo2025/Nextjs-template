@@ -84,7 +84,7 @@ const HelpBlock = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HelpBlock;
+export default HelpBlock

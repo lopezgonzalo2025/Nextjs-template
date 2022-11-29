@@ -1,5 +1,5 @@
 const Story = ({ compFor }) => {
-  if (compFor === "about") {
+  if (compFor === 'about') {
     return (
       <div>
         <section className="dark:bg-jacarta-800 relative py-24">
@@ -21,6 +21,7 @@ const Story = ({ compFor }) => {
                     width="200"
                     height="200"
                     className="mx-auto mt-8 w-[80%] rotate-[8deg] rounded-[10rem]"
+                    alt="story"
                   />
                   <img
                     src="/images/hero/3D_elements.png"
@@ -93,7 +94,7 @@ const Story = ({ compFor }) => {
           </div>
         </section>
       </div>
-    );
+    )
   } else {
     return (
       <section className="dark:bg-jacarta-800 relative py-24">
@@ -109,7 +110,7 @@ const Story = ({ compFor }) => {
             {/* <!-- Info --> */}
             <div className="pb-10 lg:w-[45%] lg:py-20 lg:pr-16">
               <h2 className="text-jacarta-700 font-display mb-6 text-2xl dark:text-white">
-                Sign up for The Tide, {"Xhibiter's"} newsletter!
+                Sign up for The Tide, "Xhibiter's" newsletter!
               </h2>
               <p className="dark:text-jacarta-300 mb-10 text-lg leading-normal">
                 Join our mailing list to stay in the loop with our newest
@@ -140,6 +141,7 @@ const Story = ({ compFor }) => {
                   width="200"
                   height="200"
                   className="mx-auto mt-8 w-[80%] rotate-[8deg] rounded-[10rem]"
+                  alt="story"
                 />
                 <img
                   src="/images/hero/3D_elements.png"
@@ -151,8 +153,8 @@ const Story = ({ compFor }) => {
           </div>
         </div>
       </section>
-    );
+    )
   }
-};
+}
 
-export default Story;
+export default Story

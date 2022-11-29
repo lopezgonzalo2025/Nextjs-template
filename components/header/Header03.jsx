@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import Logo from "./../../public/images/logo.png";
-import WhiteLogo from "./../../public/images/logo_white.png";
+import Image from 'next/image'
+import Link from 'next/link'
+import Logo from './../../public/images/logo.png'
+import WhiteLogo from './../../public/images/logo_white.png'
 
 export default function Header03() {
   return (
@@ -47,5 +47,5 @@ export default function Header03() {
         </div>
       </header>
     </>
-  );
+  )
 }

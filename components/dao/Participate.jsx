@@ -1,5 +1,5 @@
-import Faq from "./Faq";
-import VideoBlock from "./VideoBlock";
+import Faq from './Faq'
+import VideoBlock from './VideoBlock'
 
 const Participate = () => {
   return (
@@ -43,7 +43,7 @@ const Participate = () => {
       </section>
       {/* <!-- end video / faq -->   */}
     </>
-  );
-};
+  )
+}
 
-export default Participate;
+export default Participate

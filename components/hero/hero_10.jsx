@@ -1,11 +1,11 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "#1 CRYPTO APP IN STORES",
-    title: "Enjoy choosing to invest in digital currencies.",
+    meta: '#1 CRYPTO APP IN STORES',
+    title: 'Enjoy choosing to invest in digital currencies.',
     descriptions: `Every digital creation available through MakersPlace is an
         authentic and truly unique.`,
-    btnText: "Start Free Trial",
-  };
+    btnText: 'Start Free Trial'
+  }
 
   return (
     <section className="relative py-20 lg:pt-48">
@@ -70,7 +70,7 @@ const Hero_10 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero_10;
+export default Hero_10

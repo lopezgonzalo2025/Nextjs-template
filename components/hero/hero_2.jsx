@@ -1,6 +1,6 @@
-import ArtsCarousel from "../carousel/artCarousel";
-import Link from "next/link";
-import Image from "next/image";
+import ArtsCarousel from '../carousel/artCarousel'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Hero_2 = () => {
   return (
@@ -52,7 +52,7 @@ const Hero_2 = () => {
       </section>
       {/* <!-- end hero --> */}
     </>
-  );
-};
+  )
+}
 
-export default Hero_2;
+export default Hero_2

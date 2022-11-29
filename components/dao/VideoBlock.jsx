@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const VideoBlock = () => {
-  const [videoModal, setvideoModal] = useState(false);
+  const [videoModal, setvideoModal] = useState(false)
   return (
     <>
       <figure className="relative mb-8 overflow-hidden rounded-3xl before:absolute before:inset-0 before:bg-jacarta-900/25">
@@ -27,7 +27,7 @@ const VideoBlock = () => {
       {/* <!-- YouTube Video Modal --> */}
       <div
         className={
-          videoModal ? "modal lightbox fade show block" : "modal lightbox fade"
+          videoModal ? 'modal lightbox fade show block' : 'modal lightbox fade'
         }
       >
         <div className="modal-dialog modal-dialog-centered modal-xl w-full">
@@ -71,7 +71,7 @@ const VideoBlock = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default VideoBlock;
+export default VideoBlock

@@ -1,9 +1,9 @@
-import { useRouter } from "next/router";
-import pathChecking from "../../utils/pathChecking";
-import Testimonial_carousel from "../carousel/testimonial_carousel";
+import { useRouter } from 'next/router'
+import pathChecking from '../../utils/pathChecking'
+import Testimonial_carousel from '../carousel/testimonial_carousel'
 
 const Testimonial = ({ bg_jacerta }) => {
-  const route = useRouter();
+  const route = useRouter()
 
   return (
     <div>
@@ -11,11 +11,11 @@ const Testimonial = ({ bg_jacerta }) => {
       <section
         className={
           bg_jacerta
-            ? "testimonial-section bg-light-base py-24 dark:bg-jacarta-800"
+            ? 'testimonial-section bg-light-base py-24 dark:bg-jacarta-800'
             : `testimonial-section ${
-                pathChecking(route.asPath, "/home/home_10")
-                  ? "bg-white"
-                  : "bg-light-base"
+                pathChecking(route.asPath, '/home/home_10')
+                  ? 'bg-white'
+                  : 'bg-light-base'
               } py-24 dark:bg-jacarta-900`
         }
       >
@@ -34,7 +34,7 @@ const Testimonial = ({ bg_jacerta }) => {
       </section>
       {/* <!-- end testimonials --> */}
     </div>
-  );
-};
+  )
+}
 
-export default Testimonial;
+export default Testimonial

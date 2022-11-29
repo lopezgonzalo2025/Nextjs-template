@@ -1,4 +1,4 @@
-import BeniftContent from "./BeniftContent";
+import BeniftContent from './BeniftContent'
 
 const Benifits = () => {
   return (
@@ -21,7 +21,7 @@ const Benifits = () => {
       </section>
       {/* <!-- end benefits --> */}
     </>
-  );
-};
+  )
+}
 
-export default Benifits;
+export default Benifits

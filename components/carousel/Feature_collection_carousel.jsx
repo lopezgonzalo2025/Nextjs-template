@@ -1,12 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import Image from "next/image";
-import "tippy.js/dist/tippy.css";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import Feature_collections_data from "../../data/Feature_collections_data";
-import Link from "next/link";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import Image from 'next/image'
+import 'tippy.js/dist/tippy.css'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
+import Feature_collections_data from '../../data/Feature_collections_data'
+import Link from 'next/link'
 
 const Feature_collections_carousel = () => {
   return (
@@ -17,25 +17,25 @@ const Feature_collections_carousel = () => {
           // when window width is >= 640px
           640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           // when window width is >= 768px
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           900: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           1100: {
             slidesPerView: 4,
-            spaceBetween: 30,
-          },
+            spaceBetween: 30
+          }
         }}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }}
         className=" card-slider-4-columns !py-5"
       >
@@ -49,16 +49,16 @@ const Feature_collections_carousel = () => {
             userImage,
             title,
             itemsCount,
-            userName,
-          } = item;
+            userName
+          } = item
 
           const itemLink = bigImage
-            .split("/")
+            .split('/')
             .slice(-1)
             .toString()
-            .split("_")
+            .split('_')
             .slice(1, 2)
-            .toString();
+            .toString()
 
           return (
             <SwiperSlide key={id}>
@@ -132,7 +132,7 @@ const Feature_collections_carousel = () => {
                 </div>
               </article>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
 
@@ -144,7 +144,7 @@ const Feature_collections_carousel = () => {
         <MdKeyboardArrowRight />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Feature_collections_carousel;
+export default Feature_collections_carousel

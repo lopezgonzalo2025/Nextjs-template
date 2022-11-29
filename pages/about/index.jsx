@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import Team from "../../components/about/team";
-import Partners from "../../components/partners/Partners";
-import About_news from "../../components/blog/about_news";
-import Story from "../../components/about/story";
-import Head from "next/head";
-import Meta from "../../components/Meta";
+import React, { useState } from 'react'
+import Team from '../../components/about/team'
+import Partners from '../../components/partners/Partners'
+import About_news from '../../components/blog/about_news'
+import Story from '../../components/about/story'
+import Meta from '../../components/Meta'
 
 const About = () => {
-  const [video, setVideo] = useState(false);
+  const [video, setVideo] = useState(false)
   return (
     <>
       <Meta title="About || Xhibiter | NFT Marketplace Next.js Template" />
@@ -104,7 +103,7 @@ const About = () => {
 
       <div
         className={
-          video ? "modal lightbox fade show" : "modal lightbox fade hidden"
+          video ? 'modal lightbox fade show' : 'modal lightbox fade hidden'
         }
       >
         <div className="modal-dialog modal-dialog-centered modal-xl w-full">
@@ -115,12 +114,12 @@ const About = () => {
                 className="btn-close position-absolute top-0 end-0 p-3"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-                style={{ zIndex: "2", background: "none" }}
+                style={{ zIndex: '2', background: 'none' }}
                 onClick={() => setVideo(false)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  style={{ position: "relative", top: "-5px" }}
+                  style={{ position: 'relative', top: '-5px' }}
                   viewBox="0 0 16 16"
                   fill="#fff"
                 >
@@ -135,18 +134,18 @@ const About = () => {
                 <div className="carousel-inner">
                   <div
                     className="carousel-item active"
-                    style={{ minHeight: "100px" }}
+                    style={{ minHeight: '100px' }}
                   >
                     <div className="position-absolute top-50 start-50 translate-middle text-white">
                       <div
                         className="spinner-border"
-                        style={{ width: "3rem", height: "3rem" }}
+                        style={{ width: '3rem', height: '3rem' }}
                         role="status"
                       ></div>
                     </div>
                     <div
                       className="ratio ratio-16x9"
-                      style={{ backgroundColor: "#000" }}
+                      style={{ backgroundColor: '#000' }}
                     >
                       <iframe
                         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -172,7 +171,7 @@ const About = () => {
       <Partners />
       <About_news />
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About
