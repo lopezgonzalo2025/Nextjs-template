@@ -6,7 +6,7 @@ import WalletFeature from '../../components/crypto/wallet-feature'
 import NeedHelpBlock from '../../components/crypto/nee-help-block'
 import Hero_10 from '../../components/hero/hero_10'
 import Meta from '../../components/Meta'
-import Testimonial from '../../components/testimonial/testimonial'
+import Testimonial from '../../components/testimonial/Testimonial'
 
 const Home_1 = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Story from '../../components/about/story'
+import Story from '../../components/about/Story'
 import Meta from '../../components/Meta'
 
 const newsletter = () => {

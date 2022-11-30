@@ -9,7 +9,7 @@ import {
 } from '../../components/component'
 import Collection_category from '../../components/collectrions/collection_category'
 import Hero_6 from '../../components/hero/hero_6'
-import Testimonial from '../../components/blog/testimonial'
+import Testimonial from '../../components/blog/Testimonial'
 
 const Home_6 = () => {
   return (
