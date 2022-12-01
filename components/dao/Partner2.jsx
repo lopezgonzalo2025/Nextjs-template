@@ -1,20 +1,20 @@
 const Partner2 = () => {
   const partnerItem = [
-    "partner_dao_8",
-    "partner_dao_9",
-    "partner_dao_10",
-    "partner_dao_11",
-    "partner_dao_12",
-    "partner_dao_13",
-    "partner_dao_14",
-    "partner_dao_8",
-    "partner_dao_9",
-    "partner_dao_10",
-    "partner_dao_11",
-    "partner_dao_12",
-    "partner_dao_13",
-    "partner_dao_14",
-  ];
+    'partner_dao_8',
+    'partner_dao_9',
+    'partner_dao_10',
+    'partner_dao_11',
+    'partner_dao_12',
+    'partner_dao_13',
+    'partner_dao_14',
+    'partner_dao_8',
+    'partner_dao_9',
+    'partner_dao_10',
+    'partner_dao_11',
+    'partner_dao_12',
+    'partner_dao_13',
+    'partner_dao_14'
+  ]
   return (
     <>
       {partnerItem.map((item, i) => (
@@ -26,7 +26,7 @@ const Partner2 = () => {
         </div>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default Partner2;
+export default Partner2

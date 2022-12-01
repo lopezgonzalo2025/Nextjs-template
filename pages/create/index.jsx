@@ -1,59 +1,59 @@
-import React, { useState } from "react";
-import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css"; // optional
-import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
+import React, { useState } from 'react'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css' // optional
+import Collection_dropdown2 from '../../components/dropdown/collection_dropdown2'
 import {
   collectionDropdown2_data,
-  EthereumDropdown2_data,
-} from "../../data/dropdown";
-import { FileUploader } from "react-drag-drop-files";
-import Proparties_modal from "../../components/modal/proparties_modal";
-import { useDispatch } from "react-redux";
-import { showPropatiesModal } from "../../redux/counterSlice";
-import Meta from "../../components/Meta";
+  EthereumDropdown2_data
+} from '../../data/dropdown'
+import { FileUploader } from 'react-drag-drop-files'
+import Proparties_modal from '../../components/modal/proparties_modal'
+import { useDispatch } from 'react-redux'
+import { showPropatiesModal } from '../../redux/counterSlice'
+import Meta from '../../components/Meta'
 
 const Create = () => {
   const fileTypes = [
-    "JPG",
-    "PNG",
-    "GIF",
-    "SVG",
-    "MP4",
-    "WEBM",
-    "MP3",
-    "WAV",
-    "OGG",
-    "GLB",
-    "GLTF",
-  ];
-  const [file, setFile] = useState("");
+    'JPG',
+    'PNG',
+    'GIF',
+    'SVG',
+    'MP4',
+    'WEBM',
+    'MP3',
+    'WAV',
+    'OGG',
+    'GLB',
+    'GLTF'
+  ]
+  const [file, setFile] = useState('')
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const handleChange = (file) => {
-    setFile(file.name);
-  };
+    setFile(file.name)
+  }
 
   const popupItemData = [
     {
       id: 1,
-      name: "proparties",
-      text: "Textual traits that show up as rectangles.",
-      icon: "proparties-icon",
+      name: 'proparties',
+      text: 'Textual traits that show up as rectangles.',
+      icon: 'proparties-icon'
     },
     {
       id: 2,
-      name: "levels",
-      text: "Numerical traits that show as a progress bar.",
-      icon: "level-icon",
+      name: 'levels',
+      text: 'Numerical traits that show as a progress bar.',
+      icon: 'level-icon'
     },
     {
       id: 3,
-      name: "stats",
-      text: "Numerical traits that just show as numbers.",
-      icon: "stats-icon",
-    },
-  ];
+      name: 'stats',
+      text: 'Numerical traits that just show as numbers.',
+      icon: 'stats-icon'
+    }
+  ]
   return (
     <div>
       <Meta title="Create || Xhibiter | NFT Marketplace Next.js Template" />
@@ -145,9 +145,9 @@ const Create = () => {
                 External link
               </label>
               <p className="dark:text-jacarta-300 text-2xs mb-3">
-                We will include a link to this URL on this {"item's"} detail
-                page, so that users can click to learn more about it. You are
-                welcome to link to your own webpage with more details.
+                We will include a link to this URL on this item's detail page,
+                so that users can click to learn more about it. You are welcome
+                to link to your own webpage with more details.
               </p>
               <input
                 type="url"
@@ -166,7 +166,7 @@ const Create = () => {
                 Description
               </label>
               <p className="dark:text-jacarta-300 text-2xs mb-3">
-                The description will be included on the {"item's"} detail page
+                The description will be included on the item's detail page
                 underneath its image. Markdown syntax is supported.
               </p>
               <textarea
@@ -259,7 +259,7 @@ const Create = () => {
                     </button>
                   </div>
                 </div>
-              );
+              )
             })}
 
             <Proparties_modal />
@@ -455,8 +455,7 @@ const Create = () => {
 
               <p className="dark:text-jacarta-300 text-2xs mb-3">
                 Freezing your metadata will allow you to permanently lock and
-                store all of this
-                {"item's"} content in decentralized file storage.
+                store all of this item's content in decentralized file storage.
               </p>
 
               <input
@@ -480,7 +479,7 @@ const Create = () => {
       </section>
       {/* <!-- end create --> */}
     </div>
-  );
-};
+  )
+}
 
-export default Create;
+export default Create

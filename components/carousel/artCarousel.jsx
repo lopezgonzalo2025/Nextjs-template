@@ -1,12 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import Image from "next/image";
-import "tippy.js/dist/tippy.css";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import ArtData from "../../data/art_data";
-import Link from "next/link";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import Image from 'next/image'
+import 'tippy.js/dist/tippy.css'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
+import ArtData from '../../data/art_data'
+import Link from 'next/link'
 
 const ArtsCarousel = () => {
   return (
@@ -17,36 +17,36 @@ const ArtsCarousel = () => {
         breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           900: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 20
           },
           1100: {
             slidesPerView: 3,
-            spaceBetween: 30,
-          },
+            spaceBetween: 30
+          }
         }}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }}
         className=" card-slider-4-columns !py-5"
       >
         {ArtData.map((item) => {
-          const { id, bigImage, userImage, title, name } = item;
+          const { id, bigImage, userImage, title, name } = item
           const itemLink = bigImage
-            .split("/")
+            .split('/')
             .slice(-1)
             .toString()
-            .replace(".jpg", "")
-            .replace(".gif", "")
-            .replace("_lg", "");
+            .replace('.jpg', '')
+            .replace('.gif', '')
+            .replace('_lg', '')
 
           return (
             <SwiperSlide key={id}>
@@ -97,7 +97,7 @@ const ArtsCarousel = () => {
                 </div>
               </article>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
 
@@ -109,7 +109,7 @@ const ArtsCarousel = () => {
         <MdKeyboardArrowRight />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ArtsCarousel;
+export default ArtsCarousel

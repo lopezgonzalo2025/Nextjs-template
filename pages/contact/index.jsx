@@ -1,11 +1,11 @@
-import React from "react";
-import ImageTitle from "../../components/imageTitle";
-import Meta from "../../components/Meta";
-import ContactForm from "../../components/contact/ContactForm";
-import Address from "../../components/contact/address";
+import React from 'react'
+import ImageTitle from '../../components/imageTitle'
+import Meta from '../../components/Meta'
+import ContactForm from '../../components/contact/ContactForm'
+import Address from '../../components/contact/address'
 
 const Contact = () => {
-  const bgImage = "/images/page-title/knowledge_base_banner.jpg";
+  const bgImage = '/images/page-title/knowledge_base_banner.jpg'
 
   return (
     <div>
@@ -30,9 +30,7 @@ const Contact = () => {
                   Contact Us
                 </h2>
                 <p className="dark:text-jacarta-300 mb-16 text-lg leading-normal">
-                  {
-                    " Have a question? Need help? Don't hesitate, drop us a line"
-                  }
+                  Have a question? Need help? Don't hesitate, drop us a line
                 </p>
 
                 <ContactForm />
@@ -46,7 +44,7 @@ const Contact = () => {
         {/* <!-- end contact --> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

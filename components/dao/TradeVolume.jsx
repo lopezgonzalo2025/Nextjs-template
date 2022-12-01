@@ -24,7 +24,7 @@ const TradeVolume = () => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TradeVolume;
+export default TradeVolume

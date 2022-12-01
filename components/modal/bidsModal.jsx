@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { bidsModalHide } from "../../redux/counterSlice";
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { bidsModalHide } from '../../redux/counterSlice'
 
 const BidsModal = () => {
-  const { bidsModal } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
-  const [ETHAmount, setETHAmount] = useState(0.05);
+  const { bidsModal } = useSelector((state) => state.counter)
+  const dispatch = useDispatch()
+  const [ETHAmount, setETHAmount] = useState(0.05)
 
   const handleEThAmount = (e) => {
-    e.preventDefault();
-    setETHAmount(e.target.value);
-  };
+    e.preventDefault()
+    setETHAmount(e.target.value)
+  }
   return (
     <div>
-      <div className={bidsModal ? "modal fade show block" : "modal fade"}>
+      <div className={bidsModal ? 'modal fade show block' : 'modal fade'}>
         <div className="modal-dialog max-w-2xl">
           <div className="modal-content">
             <div className="modal-header">
@@ -88,7 +88,7 @@ const BidsModal = () => {
                   htmlFor="terms"
                   className="dark:text-jacarta-200 text-sm"
                 >
-                  By checking this box, I agree to {"Xhibiter's"}{" "}
+                  By checking this box, I agree to Xhibiter's
                   <a href="#" className="text-accent">
                     Terms of Service
                   </a>
@@ -111,7 +111,7 @@ const BidsModal = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BidsModal;
+export default BidsModal

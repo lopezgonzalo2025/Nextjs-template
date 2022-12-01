@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const ContactForm = () => {
   return (
@@ -52,7 +52,7 @@ const ContactForm = () => {
           className="checked:bg-accent dark:bg-jacarta-600 text-accent border-jacarta-200 focus:ring-accent/20 dark:border-jacarta-500 h-5 w-5 self-start rounded focus:ring-offset-0 cursor-pointer"
         />
         <label className="dark:text-jacarta-200 text-sm">
-          I agree to the{" "}
+          I agree to the{' '}
           <Link href="/tarms">
             <a className="text-accent">Terms of Service</a>
           </Link>
@@ -72,7 +72,7 @@ const ContactForm = () => {
         className="relative mt-4 hidden rounded-lg border border-transparent p-4"
       ></div>
     </form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm

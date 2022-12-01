@@ -1,20 +1,20 @@
-import { useDispatch } from "react-redux";
-import { walletModalShow } from "../../redux/counterSlice";
-import { useMetaMask } from "metamask-react";
+import { useDispatch } from 'react-redux'
+import { walletModalShow } from '../../redux/counterSlice'
+import { useMetaMask } from 'metamask-react'
 
 export default function WalletButtonLight() {
-  const dispath = useDispatch();
-  const { status, connect, account, chainId, ethereum } = useMetaMask();
+  const dispatch = useDispatch()
+  const { status, connect } = useMetaMask()
 
   const walletHandler = () => {
-    if (status === "unavailable") {
-      dispath(walletModalShow());
+    if (status === 'unavailable') {
+      dispatch(walletModalShow())
     }
-  };
+  }
 
-  if (status === "initializing") return <div>Ongoing...</div>;
+  if (status === 'initializing') return <div>Ongoing...</div>
 
-  if (status === "unavailable")
+  if (status === 'unavailable')
     return (
       <button
         onClick={walletHandler}
@@ -31,9 +31,9 @@ export default function WalletButtonLight() {
           <path d="M22 6h-7a6 6 0 1 0 0 12h7v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2zm-7 2h8v8h-8a4 4 0 1 1 0-8zm0 3v2h3v-2h-3z" />
         </svg>
       </button>
-    );
+    )
 
-  if (status === "notConnected")
+  if (status === 'notConnected')
     return (
       <button
         onClick={connect}
@@ -50,9 +50,9 @@ export default function WalletButtonLight() {
           <path d="M22 6h-7a6 6 0 1 0 0 12h7v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2zm-7 2h8v8h-8a4 4 0 1 1 0-8zm0 3v2h3v-2h-3z" />
         </svg>
       </button>
-    );
+    )
 
-  if (status === "connecting") return <div>Connecting...</div>;
+  if (status === 'connecting') return <div>Connecting...</div>
 
-  return null;
+  return null
 }

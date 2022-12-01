@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import Meta from "../components/Meta";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import Meta from '../components/Meta'
 
 const Error_page = () => {
   return (
@@ -47,7 +47,7 @@ const Error_page = () => {
         {/* <!-- end 404 --> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Error_page;
+export default Error_page

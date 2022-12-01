@@ -2,26 +2,26 @@ const SingleWalletFeature = () => {
   const singleWalletContent = [
     {
       id: 1,
-      icon: "w1",
-      title: " Keyless Encryption",
+      icon: 'w1',
+      title: ' Keyless Encryption',
       text: `It is commonly adopted, applies to secure message transmission either
-      directly without any key distribution in advance`,
+      directly without any key distribution in advance`
     },
     {
       id: 2,
-      icon: "w2",
-      title: " Biometric Protection",
+      icon: 'w2',
+      title: ' Biometric Protection',
       text: `Consider using anti-spoofing technology in conjunction with live
-      detection to block unauthorized users.`,
+      detection to block unauthorized users.`
     },
     {
       id: 3,
-      icon: "w3",
-      title: " 3-Factor Recovery",
+      icon: 'w3',
+      title: ' 3-Factor Recovery',
       text: `It is commonly adopted, applies to secure message transmission either
-      directly without any key distribution in advance`,
-    },
-  ];
+      directly without any key distribution in advance`
+    }
+  ]
   return (
     <>
       {singleWalletContent.map((item) => (
@@ -46,7 +46,7 @@ const SingleWalletFeature = () => {
         </div>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default SingleWalletFeature;
+export default SingleWalletFeature

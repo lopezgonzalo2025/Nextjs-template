@@ -1,7 +1,6 @@
-import React from "react";
-import Activity_item from "../../components/collectrions/Activity_item";
-import Head from "next/head";
-import Meta from "../../components/Meta";
+import React from 'react'
+import Activity_item from '../../components/collectrions/Activity_item'
+import Meta from '../../components/Meta'
 
 const index = () => {
   return (
@@ -24,7 +23,7 @@ const index = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

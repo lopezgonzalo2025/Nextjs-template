@@ -1,13 +1,13 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Scrollbar, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import { testimonial_data } from "../../data/testimonial_data";
-import { useRouter } from "next/router";
-import pathChecking from "../../utils/pathChecking";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { testimonial_data } from '../../data/testimonial_data'
+import { useRouter } from 'next/router'
+import pathChecking from '../../utils/pathChecking'
 
 const Testimonial_carousel = () => {
-  const route = useRouter();
+  const route = useRouter()
 
   return (
     <>
@@ -17,28 +17,28 @@ const Testimonial_carousel = () => {
         slidesPerView="auto"
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 2000
         }}
         breakpoints={{
           240: {
-            slidesPerView: 1,
+            slidesPerView: 1
           },
           565: {
-            slidesPerView: 2,
-          },
+            slidesPerView: 2
+          }
         }}
         pagination={{ clickable: true }}
         className=" card-slider-4-columns !py-5 !overflow-visible"
       >
         {testimonial_data.map((item) => {
-          const { id, img, title, desc, name } = item;
+          const { id, img, title, desc, name } = item
           return (
             <SwiperSlide className="text-white" key={id}>
               <div
                 className={`testimonial-item flex flex-wrap gap-5 rounded-2.5xl bg-white p-12 dark:bg-jacarta-700 lg:flex-nowrap  ${
-                  pathChecking(route.asPath, "/home/home_10")
-                    ? "border dark:border-0 border-jacarta-100"
-                    : ""
+                  pathChecking(route.asPath, '/home/home_10')
+                    ? 'border dark:border-0 border-jacarta-100'
+                    : ''
                 }`}
               >
                 <img
@@ -115,11 +115,11 @@ const Testimonial_carousel = () => {
                 </div>
               </div>
             </SwiperSlide>
-          );
+          )
         })}
       </Swiper>
     </>
-  );
-};
+  )
+}
 
-export default Testimonial_carousel;
+export default Testimonial_carousel

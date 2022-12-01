@@ -1,6 +1,6 @@
-import React from "react";
-import ImageTitle from "../../components/imageTitle";
-import Meta from "../../components/Meta";
+import React from 'react'
+import ImageTitle from '../../components/imageTitle'
+import Meta from '../../components/Meta'
 
 const Platform_status = () => {
   return (
@@ -129,7 +129,7 @@ const Platform_status = () => {
                   <p className="dark:text-jacarta-300">
                     <strong className="text-jacarta-700 dark:text-white">
                       Resolved
-                    </strong>{" "}
+                    </strong>{' '}
                     - This incident has been resolved.
                   </p>
                   <time className="dark:text-jacarta-300 text-sm">
@@ -140,7 +140,7 @@ const Platform_status = () => {
                   <p className="dark:text-jacarta-300">
                     <strong className="text-jacarta-700 dark:text-white">
                       In progress
-                    </strong>{" "}
+                    </strong>{' '}
                     - Scheduled maintenance is currently in progress. We will
                     provide updates as necessary.
                   </p>
@@ -152,7 +152,7 @@ const Platform_status = () => {
                   <p className="dark:text-jacarta-300">
                     <strong className="text-jacarta-700 dark:text-white">
                       Investigating
-                    </strong>{" "}
+                    </strong>{' '}
                     - We are experiencing intermittent database connectivity
                     issues. The team is currently investigating.
                   </p>
@@ -198,7 +198,7 @@ const Platform_status = () => {
         {/* <!-- end platform status --> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Platform_status;
+export default Platform_status

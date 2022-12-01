@@ -1,16 +1,16 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { closePropatiesModal } from "../../redux/counterSlice";
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { closePropatiesModal } from '../../redux/counterSlice'
 
 const Proparties_modal = () => {
-  const { propartiesModalValue } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
+  const { propartiesModalValue } = useSelector((state) => state.counter)
+  const dispatch = useDispatch()
 
   return (
     <div>
       <div
         className={
-          propartiesModalValue ? "modal fade show block" : "modal fade"
+          propartiesModalValue ? 'modal fade show block' : 'modal fade'
         }
       >
         <div className="modal-dialog max-w-2xl">
@@ -41,8 +41,7 @@ const Proparties_modal = () => {
             <div className="modal-body p-6">
               <p className="dark:text-jacarta-300 mb-8">
                 Item Properties show up underneath your item, are clickable, and
-                can be filtered in your {"collection's"}
-                sidebar.
+                can be filtered in your collection's sidebar.
               </p>
 
               <div className="relative my-3 flex items-center">
@@ -102,7 +101,7 @@ const Proparties_modal = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Proparties_modal;
+export default Proparties_modal

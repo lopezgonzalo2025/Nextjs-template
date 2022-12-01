@@ -1,6 +1,6 @@
-import HeadLine from "../headLine";
-import { newseLatterData } from "../../data/newseLatterData";
-import Image from "next/image";
+import HeadLine from '../headLine'
+import { newseLatterData } from '../../data/newseLatterData'
+import Image from 'next/image'
 
 const NewseLatter = ({ bgWhite = true }) => {
   return (
@@ -24,15 +24,17 @@ const NewseLatter = ({ bgWhite = true }) => {
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {newseLatterData.map((item) => {
-            const { id, icon, title, text } = item;
+            const { id, icon, title, text } = item
             return (
               <div className="text-center newseLatter-item" key={id}>
                 <div
-                  className={`mb-6 inline-flex rounded-full p-3`}
+                  className={'mb-6 inline-flex rounded-full p-3'}
                   style={{ backgroundColor: icon.parentBg }}
                 >
                   <div
-                    className={`inline-flex h-12 w-12 items-center justify-center rounded-full`}
+                    className={
+                      'inline-flex h-12 w-12 items-center justify-center rounded-full'
+                    }
                     style={{ backgroundColor: icon.childBg }}
                   >
                     <svg className="icon icon-wallet h-5 w-5 fill-white">
@@ -45,7 +47,7 @@ const NewseLatter = ({ bgWhite = true }) => {
                 </h3>
                 <p className="dark:text-jacarta-300">{text}</p>
               </div>
-            );
+            )
           })}
         </div>
 
@@ -68,7 +70,7 @@ const NewseLatter = ({ bgWhite = true }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default NewseLatter;
+export default NewseLatter

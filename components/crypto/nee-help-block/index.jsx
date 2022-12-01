@@ -1,4 +1,4 @@
-import HelpBlock from "./HelpBlock";
+import HelpBlock from './HelpBlock'
 
 const index = () => {
   return (
@@ -26,7 +26,7 @@ const index = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default index;
+export default index

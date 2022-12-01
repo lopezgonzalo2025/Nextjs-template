@@ -1,8 +1,8 @@
-import React from "react";
-import { news_data } from "../../data/news_data";
-import HeadLine from "../headLine";
-import Image from "next/image";
-import News_item from "./news_item";
+import React from 'react'
+import { news_data } from '../../data/news_data'
+import HeadLine from '../headLine'
+import Image from 'next/image'
+import News_item from './news_item'
 
 const About_news = () => {
   return (
@@ -28,7 +28,7 @@ const About_news = () => {
       </section>
       {/* <!-- end latest posts --> */}
     </>
-  );
-};
+  )
+}
 
-export default About_news;
+export default About_news

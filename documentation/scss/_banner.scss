@@ -3,7 +3,7 @@
   height: 750px;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(60deg, #41B782 0%, #1d2746 100%);
+  background-image: linear-gradient(60deg, #41b782 0%, #1d2746 100%);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -253,7 +253,7 @@
     top: 160px;
     width: 8px;
     height: 8px;
-    background: #41B782;
+    background: #41b782;
     animation: spin2 2s infinite alternate;
   }
 
@@ -324,15 +324,19 @@
 /*=========== Start Banner Support ============*/
 .docly-banner-support {
   height: 945px;
-  background-image: linear-gradient(30deg, rgb(254, 239, 236) 0%, rgb(245, 253, 255) 100%);
+  background-image: linear-gradient(
+    30deg,
+    rgb(254, 239, 236) 0%,
+    rgb(245, 253, 255) 100%
+  );
   padding: 200px 0;
   position: relative;
 
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     padding: 150px 0;
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 100px 0;
     height: 820px;
   }
@@ -343,7 +347,7 @@
     position: relative;
     z-index: 2;
 
-    @media(max-width: 991px) {
+    @media (max-width: 991px) {
       max-width: 90%;
     }
 
@@ -353,8 +357,7 @@
       color: #1d2746;
       margin-bottom: 12px;
 
-
-      @media(max-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 34px;
       }
     }
@@ -365,12 +368,10 @@
       line-height: 28px;
       margin-bottom: 40px;
 
-      @media(max-width: 991px) {
-
+      @media (max-width: 991px) {
         br {
           display: none;
         }
-
       }
     }
 
@@ -381,7 +382,6 @@
       display: flex;
       background: #fff;
       border-radius: 30px;
-
 
       input {
         width: 100%;
@@ -399,7 +399,7 @@
         background: transparent;
         border: 0;
         padding-right: 20px;
-        color: #41B782;
+        color: #41b782;
         font-size: 24px;
 
         i {
@@ -407,7 +407,6 @@
           display: inline-block;
         }
       }
-
     }
   }
 
@@ -436,12 +435,11 @@
   bottom: 165px;
   z-index: 3;
 
-
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     height: 280px;
   }
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     bottom: 80px;
   }
 
@@ -471,7 +469,6 @@
       top: 0;
       height: 80px;
       width: 80px;
-
     }
 
     &:nth-child(3) {
@@ -486,7 +483,6 @@
       top: 75px;
       height: 80px;
       width: 80px;
-
     }
 
     &:nth-child(5) {
@@ -517,7 +513,7 @@
     }
 
     &:nth-child(9) {
-      right: 22.3%;;
+      right: 22.3%;
       bottom: 35%;
       height: 50px;
       width: 50px;
@@ -533,7 +529,7 @@
     }
   }
 
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     li {
       &:nth-child(1) {
         height: 110px;
@@ -544,7 +540,6 @@
         height: 65px;
         width: 65px;
       }
-
 
       &:nth-child(3) {
         height: 60px;
@@ -585,7 +580,7 @@
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     li {
       &:nth-child(4) {
         left: 95px;
@@ -593,7 +588,7 @@
     }
   }
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     li {
       &:nth-child(2) {
         left: 13%;
@@ -605,7 +600,7 @@
     }
   }
 
-  @media(max-width: 440px) {
+  @media (max-width: 440px) {
     li {
       &:nth-child(1) {
         height: 100px;
@@ -629,14 +624,12 @@
         left: 10px;
       }
 
-
       &:nth-child(10) {
         right: 20px;
       }
     }
   }
 }
-
 
 .partical-animation {
   margin: 0;
@@ -656,7 +649,6 @@
     &:nth-child(1) {
       left: 165px;
       top: 120px;
-
     }
 
     &:nth-child(2) {
@@ -665,7 +657,6 @@
       height: 8px;
       width: 8px;
       background: #fd9382;
-
     }
 
     &:nth-child(3) {
@@ -682,7 +673,6 @@
       height: 35px;
       width: 35px;
       background: #f3d5de;
-
     }
 
     &:nth-child(4) {
@@ -691,7 +681,6 @@
       height: 12px;
       width: 12px;
       background: #83daed;
-
     }
 
     &:nth-child(5) {
@@ -700,7 +689,6 @@
       height: 10px;
       width: 10px;
       background: #fdc43a;
-
     }
 
     &:nth-child(6) {
@@ -709,7 +697,6 @@
       height: 48px;
       width: 48px;
       background: #4edfda;
-
     }
 
     &:nth-child(7) {
@@ -718,7 +705,6 @@
       height: 22px;
       width: 22px;
       background: #f39ab2;
-
     }
 
     &:nth-child(8) {
@@ -727,7 +713,6 @@
       height: 22px;
       width: 22px;
       background: #f39ab2;
-
     }
 
     &:nth-child(9) {
@@ -736,7 +721,6 @@
       height: 8px;
       width: 8px;
       background: #ffa3be;
-
     }
 
     &:nth-child(10) {
@@ -745,7 +729,6 @@
       height: 28px;
       width: 28px;
       background: #bff8c6;
-
     }
 
     &:nth-child(11) {
@@ -756,20 +739,18 @@
       background: #ffa3be;
     }
 
-
     &:nth-child(12) {
       right: 65px;
       bottom: 160px;
     }
   }
-
 }
 
 /*=========== End Banner Support ============*/
 
 /*=========== Start breadcrumb_area css ============*/
 .breadcrumb_area {
-  background-image: linear-gradient(60deg, #41B782 0%, #1d2746 100%);
+  background-image: linear-gradient(60deg, #41b782 0%, #1d2746 100%);
   padding: 190px 0 95px;
   position: relative;
 
@@ -797,13 +778,13 @@
     }
   }
 
-  .custom-select{
+  .custom-select {
     line-height: 65px;
     z-index: 3;
 
     &:before {
       width: 1px;
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 15px;
@@ -821,59 +802,59 @@
 }
 
 .custom-select {
-    border-radius: 0;
-    font-size: 14px;
-    box-shadow: none;
-    padding: 0 80px 0 20px;
-    height: 100%;
-    border: 0;
-    background: #fff;
-    color: #6b707f;
+  border-radius: 0;
+  font-size: 14px;
+  box-shadow: none;
+  padding: 0 80px 0 20px;
+  height: 100%;
+  border: 0;
+  background: #fff;
+  color: #6b707f;
 
-    &:after {
-      border-bottom: 2px solid #6b707f;
-      border-right: 2px solid #6b707f;
-      height: 8px;
-      width: 8px;
-      right: 28px;
-      margin-top: -6px;
-    }
+  &:after {
+    border-bottom: 2px solid #6b707f;
+    border-right: 2px solid #6b707f;
+    height: 8px;
+    width: 8px;
+    right: 28px;
+    margin-top: -6px;
+  }
 
-    ul {
-      width: 100%;
-      padding: 10px 0;
-      border-radius: 4px;
+  ul {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
 
-      li {
-        font-size: 14px;
-        color: #6b707f;
-        position: relative;
-        min-height: 36px;
-        line-height: 36px;
+    li {
+      font-size: 14px;
+      color: #6b707f;
+      position: relative;
+      min-height: 36px;
+      line-height: 36px;
+
+      &:before {
+        content: '';
+        width: 2px;
+        height: 0;
+        position: absolute;
+        left: 0;
+        background: #41b782;
+        transition: all 0.2s linear;
+      }
+
+      &:hover,
+      &.selected {
+        background: #f4f9fa;
+        color: $blue;
+        font-weight: 500;
 
         &:before {
-          content: "";
-          width: 2px;
-          height: 0;
-          position: absolute;
-          left: 0;
-          background: #41B782;
-          transition: all 0.2s linear;
-        }
-
-        &:hover,
-        &.selected {
-          background: #f4f9fa;
-          color: $blue;
-          font-weight: 500;
-
-          &:before {
-            height: 100%;
-          }
+          height: 100%;
         }
       }
     }
   }
+}
 
 /*=========== End breadcrumb_area css ============*/
 
@@ -921,11 +902,11 @@
         padding-left: 12px;
 
         &:before {
-          content: "";
+          content: '';
           display: inline-block;
           height: 13px;
           width: 1px;
-          background: #B7B9BE;
+          background: #b7b9be;
           margin-right: 12px;
         }
       }
@@ -1002,7 +983,7 @@
   }
 
   .date {
-    color: #878EA6;
+    color: #878ea6;
     float: right;
     font-size: 14px;
     padding-right: 10px;
@@ -1020,12 +1001,12 @@
   padding: 0;
 
   .breadcrumb-item {
-    color: #878EA6;
+    color: #878ea6;
     font-size: 14px;
     line-height: 21px;
 
     a {
-      color: #878EA6;
+      color: #878ea6;
 
       &:hover {
         color: $blue;
@@ -1034,9 +1015,9 @@
 
     & + .breadcrumb-item {
       &:before {
-        content: "\35";
+        content: '\35';
         font-family: eleganticons;
-        color: #B7B9BE;
+        color: #b7b9be;
       }
     }
   }

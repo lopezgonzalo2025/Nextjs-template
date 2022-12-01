@@ -1,4 +1,4 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
 const BeniftContent = () => {
   return (
@@ -258,7 +258,7 @@ const BeniftContent = () => {
         </div>
       </div>
     </Tabs>
-  );
-};
+  )
+}
 
-export default BeniftContent;
+export default BeniftContent

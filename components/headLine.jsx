@@ -6,7 +6,7 @@ const headLine = ({ text, classes, image, pera }) => {
           <img
             src={image}
             alt="headling"
-            className={"mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"}
+            className={'mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl'}
           />
         )}
 
@@ -20,7 +20,7 @@ const headLine = ({ text, classes, image, pera }) => {
         </p>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default headLine;
+export default headLine

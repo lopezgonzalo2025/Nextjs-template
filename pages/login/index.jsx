@@ -1,29 +1,29 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
-import Meta from "../../components/Meta";
-import { Metamask_comp_login } from "../../components/metamask/Metamask";
+import React, { useState } from 'react'
+import Link from 'next/link'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
+import Meta from '../../components/Meta'
+import { Metamask_comp_login } from '../../components/metamask/Metamask'
 
 const Login = () => {
-  const [itemActive, setItemActive] = useState(1);
+  const [itemActive, setItemActive] = useState(1)
   const tabItem = [
     {
       id: 1,
-      text: "Ethereum",
-      icon: "ETH",
+      text: 'Ethereum',
+      icon: 'ETH'
     },
     {
       id: 2,
-      text: "Torus",
-      icon: "torus",
+      text: 'Torus',
+      icon: 'torus'
     },
     {
       id: 4,
-      text: "Mobile Wallet",
-      icon: "mbl-wallet",
-    },
-  ];
+      text: 'Mobile Wallet',
+      icon: 'mbl-wallet'
+    }
+  ]
 
   return (
     <div>
@@ -84,8 +84,8 @@ const Login = () => {
                         <button
                           className={
                             itemActive === id
-                              ? "nav-link active hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white"
-                              : "nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white"
+                              ? 'nav-link active hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white'
+                              : 'nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white'
                           }
                         >
                           <svg className="icon icon-ETH mr-1 mb-[2px] h-4 w-4 fill-current">
@@ -97,7 +97,7 @@ const Login = () => {
                           </span>
                         </button>
                       </Tab>
-                    );
+                    )
                   })}
                 </TabList>
 
@@ -201,7 +201,7 @@ const Login = () => {
       </section>
       {/* <!-- end login --> */}
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

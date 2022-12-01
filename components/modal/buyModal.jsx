@@ -1,17 +1,17 @@
-import Link from "next/link";
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { buyModalHide } from "../../redux/counterSlice";
-import { Confirm_checkout } from "../metamask/Metamask";
+import Link from 'next/link'
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { buyModalHide } from '../../redux/counterSlice'
+import { Confirm_checkout } from '../metamask/Metamask'
 
 const BuyModal = () => {
-  const { buyModal } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
+  const { buyModal } = useSelector((state) => state.counter)
+  const dispatch = useDispatch()
 
   return (
     <div>
       {/* <!-- Buy Now Modal --> */}
-      <div className={buyModal ? "modal fade show block" : "modal fade"}>
+      <div className={buyModal ? 'modal fade show block' : 'modal fade'}>
         <div className="modal-dialog max-w-2xl">
           <div className="modal-content">
             <div className="modal-header">
@@ -133,7 +133,7 @@ const BuyModal = () => {
                   htmlFor="buyNowTerms"
                   className="dark:text-jacarta-200 text-sm"
                 >
-                  By checking this box, I agree to {"Xhibiter's"}{" "}
+                  By checking this box, I agree to Xhibiter's
                   <Link href="/tarms">
                     <a className="text-accent">Terms of Service</a>
                   </Link>
@@ -151,7 +151,7 @@ const BuyModal = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BuyModal;
+export default BuyModal

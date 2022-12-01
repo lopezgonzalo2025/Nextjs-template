@@ -1,6 +1,6 @@
-import React from "react";
-import Story from "../../components/about/story";
-import Meta from "../../components/Meta";
+import React from 'react'
+import Story from '../../components/about/Story'
+import Meta from '../../components/Meta'
 
 const newsletter = () => {
   return (
@@ -10,7 +10,7 @@ const newsletter = () => {
         <Story compFor="news" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default newsletter;
+export default newsletter

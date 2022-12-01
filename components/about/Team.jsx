@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { team_data } from "../../data/team_data";
-import HeadLine from "../headLine";
+import Link from 'next/link'
+import { team_data } from '../../data/team_data'
+import HeadLine from '../headLine'
 
 const Team = () => {
   return (
@@ -14,7 +14,7 @@ const Team = () => {
           />
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-[1.875rem] lg:grid-cols-5">
             {team_data.map((item) => {
-              const { id, image, title, name } = item;
+              const { id, image, title, name } = item
               return (
                 <div
                   className="dark:bg-jacarta-700 rounded-2lg dark:border-jacarta-600 border-jacarta-100 border bg-white p-8 text-center transition-shadow hover:shadow-lg"
@@ -67,7 +67,7 @@ const Team = () => {
                     </Link>
                   </div>
                 </div>
-              );
+              )
             })}
 
             <Link href="#">
@@ -82,7 +82,7 @@ const Team = () => {
       </section>
       {/* <!-- end team --> */}
     </div>
-  );
-};
+  )
+}
 
-export default Team;
+export default Team

@@ -1,4 +1,4 @@
-import FaqAccordion from "./accoedion";
+import FaqAccordion from './accoedion'
 
 const Faq = () => {
   return (
@@ -19,7 +19,7 @@ const Faq = () => {
               <FaqAccordion />
 
               <p className="text-lg text-jacarta-700 dark:text-jacarta-100">
-                Any Question?{" "}
+                Any Question?{' '}
                 <a href="#" className="text-accent">
                   support@xhibiter.com
                 </a>
@@ -90,7 +90,7 @@ const Faq = () => {
       </section>
       {/* <!-- end faq --> */}
     </div>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq
