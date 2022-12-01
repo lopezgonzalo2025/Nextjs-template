@@ -7,23 +7,37 @@ $great: 'Great Vibes', cursive;
 
 $h_title: #1d2746;
 $p_color: #6b707f;
-$blue: #41B782;
+$blue: #41b782;
 
 // Mixins
-@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
-    transition: $property $duration $animate $delay; 
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
 }
 
 // Placeholder Mixins
 
 @mixin placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
 }
 
-.col-md-offset-right-1,.col-lg-offset-right-1{
-    margin-right: 8.33333333%;
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
 }
 // Font family link

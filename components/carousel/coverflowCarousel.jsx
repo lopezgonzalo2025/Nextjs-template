@@ -1,10 +1,10 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow, Ally } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import { coverflow_data } from "../../data/coverflow_data";
-import Link from "next/link";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, EffectCoverflow } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import { coverflow_data } from '../../data/coverflow_data'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const CoverflowCarousel = () => {
   return (
@@ -17,19 +17,19 @@ const CoverflowCarousel = () => {
             // when window width is >= 640px
             100: {
               // width: 640,
-              slidesPerView: 1,
+              slidesPerView: 1
             },
             575: {
               // width: 640,
-              slidesPerView: 3,
+              slidesPerView: 3
             },
             // when window width is >= 768px
             992: {
               // width: 768,
-              slidesPerView: 5,
-            },
+              slidesPerView: 5
+            }
           }}
-          effect={"coverflow"}
+          effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={5}
@@ -39,31 +39,31 @@ const CoverflowCarousel = () => {
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: true
           }}
           pagination={true}
           modules={[EffectCoverflow, Pagination, Navigation]}
           navigation={{
-            nextEl: ".swiper-button-next-4",
-            prevEl: ".swiper-button-prev-4",
+            nextEl: '.swiper-button-next-4',
+            prevEl: '.swiper-button-prev-4'
           }}
           className="swiper coverflow-slider !py-5"
         >
           {coverflow_data.map((item) => {
-            const { img, id, authorImage, authorName, title } = item;
+            const { img, id, authorImage, authorName, title } = item
             const itemLink = img
-              .split("/")
+              .split('/')
               .slice(-1)
               .toString()
-              .replace(".jpg", "")
-              .replace(".gif", "")
-              .replace("_lg", "");
+              .replace('.jpg', '')
+              .replace('.gif', '')
+              .replace('_lg', '')
             return (
               <SwiperSlide key={id}>
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700">
                     <figure className="relative">
-                      <Link href={"/item/" + itemLink}>
+                      <Link href={'/item/' + itemLink}>
                         <a>
                           <Image
                             src={img}
@@ -87,7 +87,7 @@ const CoverflowCarousel = () => {
                           </a>
                         </Link>
                         <div>
-                          <Link href={"/item/" + itemLink}>
+                          <Link href={'/item/' + itemLink}>
                             <a className="block">
                               <span className="font-display text-lg leading-none text-jacarta-700 hover:text-accent dark:text-white">
                                 {title}
@@ -103,7 +103,7 @@ const CoverflowCarousel = () => {
                   </div>
                 </article>
               </SwiperSlide>
-            );
+            )
           })}
         </Swiper>
 
@@ -135,7 +135,7 @@ const CoverflowCarousel = () => {
         {/* <!-- end coverflow slider --> */}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CoverflowCarousel;
+export default CoverflowCarousel

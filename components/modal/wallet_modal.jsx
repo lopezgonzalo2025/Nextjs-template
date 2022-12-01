@@ -1,16 +1,15 @@
-import { display } from "@mui/system";
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { walletModalhide } from "../../redux/counterSlice";
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { walletModalhide } from '../../redux/counterSlice'
 
 const Wallet_modal = () => {
-  const walletModal = useSelector((state) => state.counter.walletModal);
-  const dispatch = useDispatch();
+  const walletModal = useSelector((state) => state.counter.walletModal)
+  const dispatch = useDispatch()
   return (
     <div>
       {/* <!-- Wallet Modal --> */}
       <div
-        className={walletModal ? "block modal fade show " : "modal fade hidden"}
+        className={walletModal ? 'block modal fade show ' : 'modal fade hidden'}
       >
         <div className="modal-dialog max-w-lg">
           <div className="modal-content">
@@ -42,8 +41,7 @@ const Wallet_modal = () => {
                 <use xlinkHref="/icons.svg#icon-metamask"></use>
               </svg>
               <p className="text-center dark:text-white">
-                You {"don't"} have MetaMask in your browser, please download it
-                from
+                You don't have MetaMask in your browser, please download it from
                 <a
                   href="https://metamask.io/"
                   className="text-accent"
@@ -72,7 +70,7 @@ const Wallet_modal = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Wallet_modal;
+export default Wallet_modal

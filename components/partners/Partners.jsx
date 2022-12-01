@@ -1,13 +1,11 @@
-import Link from "next/link";
-
 const Partners = () => {
   const partnerGroup = [
-    { id: 1, link: "https://www.nft-dao.org/", logo: "partner_logo_1" },
-    { id: 2, link: "https://www.nft-dao.org/", logo: "partner_logo_2" },
-    { id: 3, link: "https://www.nft-dao.org/", logo: "partner_logo_3" },
-    { id: 4, link: "https://www.nft-dao.org/", logo: "partner_logo_4" },
-    { id: 5, link: "https://www.nft-dao.org/", logo: "partner_logo_5" },
-  ];
+    { id: 1, link: 'https://www.nft-dao.org/', logo: 'partner_logo_1' },
+    { id: 2, link: 'https://www.nft-dao.org/', logo: 'partner_logo_2' },
+    { id: 3, link: 'https://www.nft-dao.org/', logo: 'partner_logo_3' },
+    { id: 4, link: 'https://www.nft-dao.org/', logo: 'partner_logo_4' },
+    { id: 5, link: 'https://www.nft-dao.org/', logo: 'partner_logo_5' }
+  ]
   return (
     <>
       <div className="dark:bg-jacarta-900 ">
@@ -30,7 +28,7 @@ const Partners = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Partners;
+export default Partners

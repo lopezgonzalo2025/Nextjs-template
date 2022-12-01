@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const Intro_video = () => {
-  const [videoModal, setvideoModal] = useState(false);
-  const [url, setUrl] = useState(null);
+  const [videoModal, setvideoModal] = useState(false)
+  const [url, setUrl] = useState(null)
   return (
     <>
       {/* <!-- Intro Video --> */}
@@ -21,8 +21,8 @@ const Intro_video = () => {
             />
             <button
               onClick={() => {
-                setvideoModal(true);
-                setUrl("https://www.youtube.com/embed/dQw4w9WgXcQ");
+                setvideoModal(true)
+                setUrl('https://www.youtube.com/embed/dQw4w9WgXcQ')
               }}
               className="js-video-modal-trigger absolute top-1/2 left-1/2 flex h-24 w-24 -translate-y-1/2 -translate-x-1/2 items-center justify-center rounded-full border-2 border-white transition-transform will-change-transform hover:scale-90"
             >
@@ -45,7 +45,7 @@ const Intro_video = () => {
       {/* <!-- YouTube Video Modal --> */}
       <div
         className={
-          videoModal ? "modal lightbox fade show block" : "modal lightbox fade"
+          videoModal ? 'modal lightbox fade show block' : 'modal lightbox fade'
         }
       >
         <div className="modal-dialog modal-dialog-centered modal-xl w-full">
@@ -53,8 +53,8 @@ const Intro_video = () => {
             <div className="modal-body p-0 relative">
               <button
                 onClick={() => {
-                  setvideoModal(false);
-                  setUrl(null);
+                  setvideoModal(false)
+                  setUrl(null)
                 }}
                 type="button"
                 className="btn-close position-absolute top-0 end-0 p-3 z-10"
@@ -92,7 +92,7 @@ const Intro_video = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Intro_video;
+export default Intro_video

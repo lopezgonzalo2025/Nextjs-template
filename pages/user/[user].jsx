@@ -1,38 +1,36 @@
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import Link from "next/link";
-import Social_dropdown from "../../components/dropdown/Social_dropdown";
-import Auctions_dropdown from "../../components/dropdown/Auctions_dropdown";
-import user_data from "../../data/user_data";
-import User_items from "../../components/user/User_items";
-import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css"; // optional
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import Head from "next/head";
-import Meta from "../../components/Meta";
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
+import Social_dropdown from '../../components/dropdown/Social_dropdown'
+import Auctions_dropdown from '../../components/dropdown/Auctions_dropdown'
+import user_data from '../../data/user_data'
+import User_items from '../../components/user/User_items'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css' // optional
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import Meta from '../../components/Meta'
 
 const User = () => {
-  const router = useRouter();
-  const pid = router.query.user;
+  const router = useRouter()
+  const pid = router.query.user
   // console.log(pid);
 
-  const [likesImage, setLikesImage] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [likesImage, setLikesImage] = useState(false)
+  const [copied, setCopied] = useState(false)
 
   const handleLikes = () => {
     if (!likesImage) {
-      setLikesImage(true);
+      setLikesImage(true)
     } else {
-      setLikesImage(false);
+      setLikesImage(false)
     }
-  };
+  }
 
   useEffect(() => {
     setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  }, [copied]);
+      setCopied(false)
+    }, 2000)
+  }, [copied])
 
   return (
     <>
@@ -42,7 +40,7 @@ const User = () => {
         .filter((item) => item.id === pid)
         .map((item) => {
           const { id, image, title, userId, text, joinYear, icon, coverPhoto } =
-            item;
+            item
           return (
             <div className="pt-[5.5rem] lg:pt-24" key={id}>
               {/* <!-- Banner --> */}
@@ -149,10 +147,10 @@ const User = () => {
               {/* <!-- end profile --> */}
               <User_items />
             </div>
-          );
+          )
         })}
     </>
-  );
-};
+  )
+}
 
-export default User;
+export default User

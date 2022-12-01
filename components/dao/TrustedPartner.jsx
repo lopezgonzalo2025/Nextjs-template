@@ -1,5 +1,5 @@
-import Partner1 from "./Partner1";
-import Partner2 from "./Partner2";
+import Partner1 from './Partner1'
+import Partner2 from './Partner2'
 
 const TrustedPartner = () => {
   return (
@@ -29,7 +29,7 @@ const TrustedPartner = () => {
       </section>
       {/* <!-- end partners -->  */}
     </>
-  );
-};
+  )
+}
 
-export default TrustedPartner;
+export default TrustedPartner

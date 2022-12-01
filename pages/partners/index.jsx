@@ -1,13 +1,13 @@
-import React from "react";
-import { partners_data } from "../../data/partners_data";
-import HeadLine from "../../components/headLine";
-import { works_data } from "../../data/partners_data";
-import Feature_collections_carousel from "../../components/carousel/Feature_collection_carousel";
-import Accordion from "../../components/accordion";
-import { accordion_data } from "../../data/help_center_data";
-import Link from "next/link";
-import PartnersComp from "../../components/partners/Partners";
-import Meta from "../../components/Meta";
+import React from 'react'
+import { partners_data } from '../../data/partners_data'
+import HeadLine from '../../components/headLine'
+import { works_data } from '../../data/partners_data'
+import Feature_collections_carousel from '../../components/carousel/Feature_collection_carousel'
+import Accordion from '../../components/accordion'
+import { accordion_data } from '../../data/help_center_data'
+import Link from 'next/link'
+import PartnersComp from '../../components/partners/Partners'
+import Meta from '../../components/Meta'
 
 const Partners = () => {
   return (
@@ -62,7 +62,7 @@ const Partners = () => {
                       {text}
                     </h3>
                   </div>
-                );
+                )
               })}
             </div>
           </div>
@@ -98,7 +98,7 @@ const Partners = () => {
                     </h3>
                     <p className="dark:text-jacarta-300">{text}</p>
                   </div>
-                );
+                )
               })}
             </div>
           </div>
@@ -154,9 +154,10 @@ const Partners = () => {
 
               <div className="mb-4 md:mb-0">
                 <p className="text-jacarta-700 text-lg leading-normal dark:text-white">
-                  {
-                    "Xhibiter is one of the most exciting, important companies in the world right now because it's the portal to the new digital economy. If you're interested in shaping a new business model for creators, this is the team to join."
-                  }
+                  Xhibiter is one of the most exciting, important companies in
+                  the world right now because it's the portal to the new digital
+                  economy. If you're interested in shaping a new business model
+                  for creators, this is the team to join.
                 </p>
                 <span className="text-jacarta-700 font-display text-md mt-12 block font-medium dark:text-white">
                   Katie Smith
@@ -204,7 +205,7 @@ const Partners = () => {
         <PartnersComp />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Partners;
+export default Partners

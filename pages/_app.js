@@ -1,20 +1,20 @@
-import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
-import Layout from "../components/layout";
-import { Provider } from "react-redux";
-import { store } from "../redux/store";
-import { useRouter } from "next/router";
-import { MetaMaskProvider } from "metamask-react";
-import Meta from "../components/Meta";
-import UserContext from "../components/UserContext";
-import { useEffect, useRef } from "react";
+import '../styles/globals.css'
+import { ThemeProvider } from 'next-themes'
+import Layout from '../components/layout'
+import { Provider } from 'react-redux'
+import { store } from '../redux/store'
+import { useRouter } from 'next/router'
+import { MetaMaskProvider } from 'metamask-react'
+import Meta from '../components/Meta'
+import UserContext from '../components/UserContext'
+import { useEffect, useRef } from 'react'
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  const pid = router.asPath;
+  const router = useRouter()
+  const pid = router.asPath
   const scrollRef = useRef({
-    scrollPos: 0,
-  });
+    scrollPos: 0
+  })
 
   useEffect(() => {
     // if (pid === '/home/home_8') {
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     // 	html.classList.remove('light');
     // 	html.classList.add('dark');
     // }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider enableSystem={true} attribute="class">
           <MetaMaskProvider>
             <UserContext.Provider value={{ scrollRef: scrollRef }}>
-              {pid === "/login" ? (
+              {pid === '/login' ? (
                 <Component {...pageProps} />
               ) : (
                 <Layout>
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }) {
         </ThemeProvider>
       </Provider>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

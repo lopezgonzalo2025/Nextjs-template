@@ -2,37 +2,37 @@ const SingleFeatuer = () => {
   const featureContent = [
     {
       id: 1,
-      bgLight: "bg-[#CDBCFF]",
-      bgFill: "bg-accent",
-      icon: "1",
-      meta: "$76 billion",
-      textInfo: "24h trading volume on our app exchange",
+      bgLight: 'bg-[#CDBCFF]',
+      bgFill: 'bg-accent',
+      icon: '1',
+      meta: '$76 billion',
+      textInfo: '24h trading volume on our app exchange'
     },
     {
       id: 2,
-      bgLight: "bg-[#C4F2E3]",
-      bgFill: "bg-green",
-      icon: "2",
-      meta: "310+",
-      textInfo: "Cryptocurrencies listed",
+      bgLight: 'bg-[#C4F2E3]',
+      bgFill: 'bg-green',
+      icon: '2',
+      meta: '310+',
+      textInfo: 'Cryptocurrencies listed'
     },
     {
       id: 3,
-      bgLight: "bg-[#CDDFFB]",
-      bgFill: "bg-blue",
-      icon: "3",
-      meta: "100+ million",
-      textInfo: "Download our app and register users in 3 minutes",
+      bgLight: 'bg-[#CDDFFB]',
+      bgFill: 'bg-blue',
+      icon: '3',
+      meta: '100+ million',
+      textInfo: 'Download our app and register users in 3 minutes'
     },
     {
       id: 4,
-      bgLight: "bg-[#FFD0D0]",
-      bgFill: "bg-red",
-      icon: "4",
-      meta: "$0.00023",
-      textInfo: "Lowest transaction fees",
-    },
-  ];
+      bgLight: 'bg-[#FFD0D0]',
+      bgFill: 'bg-red',
+      icon: '4',
+      meta: '$0.00023',
+      textInfo: 'Lowest transaction fees'
+    }
+  ]
   return (
     <>
       {featureContent.map((item) => (
@@ -60,7 +60,7 @@ const SingleFeatuer = () => {
         </div>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default SingleFeatuer;
+export default SingleFeatuer

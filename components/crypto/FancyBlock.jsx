@@ -4,8 +4,8 @@ const FancyBlock = () => {
 assets`,
     `  Safe storage of cryptocurrencies – take control of your own
 assets`,
-    ` 10,000+ DApps - enjoy DeFi`,
-  ];
+    ' 10,000+ DApps - enjoy DeFi'
+  ]
 
   return (
     <>
@@ -68,7 +68,7 @@ assets`,
       </section>
       {/* <!-- end promo -->  */}
     </>
-  );
-};
+  )
+}
 
-export default FancyBlock;
+export default FancyBlock

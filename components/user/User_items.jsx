@@ -1,42 +1,41 @@
-import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Activity_item from "../collectrions/Activity_item";
-import Image from "next/image";
-import Feature_collections_data from "../../data/Feature_collections_data";
-import Trending_categories_items from "../categories/trending_categories_items";
+import React, { useState } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import Activity_item from '../collectrions/Activity_item'
+import Image from 'next/image'
+import Trending_categories_items from '../categories/trending_categories_items'
 
-import "react-tabs/style/react-tabs.css";
-import Explore_collection_item from "../collectrions/explore_collection_item";
+import 'react-tabs/style/react-tabs.css'
+import Explore_collection_item from '../collectrions/explore_collection_item'
 
 const User_items = () => {
-  const [itemActive, setItemActive] = useState(1);
+  const [itemActive, setItemActive] = useState(1)
   const tabItem = [
     {
       id: 1,
-      text: "on sale",
-      icon: "on-sale",
+      text: 'on sale',
+      icon: 'on-sale'
     },
     {
       id: 2,
-      text: "owned",
-      icon: "owned",
+      text: 'owned',
+      icon: 'owned'
     },
     {
       id: 3,
-      text: "created(20)",
-      icon: "created",
+      text: 'created(20)',
+      icon: 'created'
     },
     {
       id: 4,
-      text: "collections",
-      icon: "listing",
+      text: 'collections',
+      icon: 'listing'
     },
     {
       id: 5,
-      text: "Activity",
-      icon: "activity",
-    },
-  ];
+      text: 'Activity',
+      icon: 'activity'
+    }
+  ]
   return (
     <>
       <section className="relative py-24">
@@ -64,8 +63,8 @@ const User_items = () => {
                     <button
                       className={
                         itemActive === id
-                          ? "nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white active"
-                          : "nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white"
+                          ? 'nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white active'
+                          : 'nav-link hover:text-jacarta-700 text-jacarta-400 relative flex items-center whitespace-nowrap py-3 px-6 dark:hover:text-white'
                       }
                     >
                       <svg className="icon mr-1 h-5 w-5 fill-current">
@@ -76,7 +75,7 @@ const User_items = () => {
                       </span>
                     </button>
                   </Tab>
-                );
+                )
               })}
             </TabList>
 
@@ -113,7 +112,7 @@ const User_items = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default User_items;
+export default User_items

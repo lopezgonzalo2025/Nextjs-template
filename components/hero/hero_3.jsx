@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper";
-import Image from "next/image";
+import React, { useState } from 'react'
+import Link from 'next/link'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper'
+import Image from 'next/image'
 import {
   hero_3_swiper_data,
-  hero_3_swiper_thumbs_data,
-} from "../../data/hero_3_swiper_data";
+  hero_3_swiper_thumbs_data
+} from '../../data/hero_3_swiper_data'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/navigation'
+import 'swiper/css/thumbs'
 
 const Hero_3 = () => {
-  const [activeThumb, setActiveThumb] = useState(null);
+  const [activeThumb, setActiveThumb] = useState(null)
 
   return (
     <>
@@ -27,16 +27,16 @@ const Hero_3 = () => {
           spaceBetween={10}
           navigation={true}
           thumbs={{
-            swiper: activeThumb && !activeThumb.destroyed ? activeThumb : null,
+            swiper: activeThumb && !activeThumb.destroyed ? activeThumb : null
           }}
           autoplay={{
             delay: 5000,
-            disableOnInteraction: false,
+            disableOnInteraction: false
           }}
           className="full-slider h-screen"
         >
           {hero_3_swiper_data.map((item) => {
-            const { image, id, title, name, titleLink, userLink } = item;
+            const { image, id, title, name, titleLink, userLink } = item
             return (
               <SwiperSlide key={id}>
                 <div className="swiper-slide after:bg-jacarta-900/60 after:absolute after:inset-0">
@@ -59,7 +59,7 @@ const Hero_3 = () => {
                   />
                 </div>
               </SwiperSlide>
-            );
+            )
           })}
         </Swiper>
 
@@ -75,16 +75,16 @@ const Hero_3 = () => {
               slidesPerView="auto"
               breakpoints={{
                 100: {
-                  slidesPerView: 2,
+                  slidesPerView: 2
                 },
                 768: {
-                  slidesPerView: 3,
-                },
+                  slidesPerView: 3
+                }
               }}
               className=" full-slider-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-thumbs"
             >
               {hero_3_swiper_thumbs_data.map((item) => {
-                const { image, id } = item;
+                const { image, id } = item
                 return (
                   <SwiperSlide
                     className="swiper-slide cursor-pointer rounded p-5 swiper-slide-duplicate swiper-slide-duplicate-next "
@@ -99,14 +99,14 @@ const Hero_3 = () => {
                       <div className="progress bg-accent absolute h-0.5 w-0"></div>
                     </div>
                   </SwiperSlide>
-                );
+                )
               })}
             </Swiper>
           </div>
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Hero_3;
+export default Hero_3

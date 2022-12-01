@@ -1,13 +1,13 @@
-import { useTheme } from "next-themes";
+import { useTheme } from 'next-themes'
 
 export default function DarkMode() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
   // toggle of dark & light mode
   const toggle = () => {
-    if (theme === "light") setTheme("dark");
-    else setTheme("light");
-  };
+    if (theme === 'light') setTheme('dark')
+    else setTheme('light')
+  }
   return (
     <>
       <button
@@ -37,5 +37,5 @@ export default function DarkMode() {
         </svg>
       </button>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import Countdown from "react-countdown";
+import Countdown from 'react-countdown'
 
 const Completionist = () => {
   return (
@@ -11,12 +11,12 @@ const Completionist = () => {
         This auction has ended
       </span>
     </div>
-  );
-};
+  )
+}
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
-    return <Completionist />;
+    return <Completionist />
   } else {
     return (
       <>
@@ -59,12 +59,12 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
           </span>
         </div>
       </>
-    );
+    )
   }
-};
+}
 
 const items_Countdown_timer = ({ time = 500000 }) => {
-  return <Countdown date={Date.now() + time} renderer={renderer}></Countdown>;
-};
+  return <Countdown date={Date.now() + time} renderer={renderer}></Countdown>
+}
 
-export default items_Countdown_timer;
+export default items_Countdown_timer

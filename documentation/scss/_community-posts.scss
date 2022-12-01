@@ -29,11 +29,11 @@
     }
   }
 
-  @media(max-width: 667px) {
+  @media (max-width: 667px) {
     display: block;
   }
 
-  @media(max-width: 420px) {
+  @media (max-width: 420px) {
     padding: 20px 15px;
   }
 
@@ -55,22 +55,22 @@
       overflow: hidden;
       height: 40px;
 
-      &.forum-icon{
+      &.forum-icon {
         border-radius: 0;
-        img{
+        img {
           padding: 2px;
         }
       }
 
-      img{
+      img {
         max-width: 40px;
       }
 
-      @media(max-width: 667px) {
+      @media (max-width: 667px) {
         margin-right: 20px;
       }
 
-      @media(max-width: 420px) {
+      @media (max-width: 420px) {
         margin-right: 15px;
       }
     }
@@ -89,7 +89,7 @@
           color: #1d2746;
 
           &:hover {
-            color: #41B782;
+            color: #41b782;
           }
         }
       }
@@ -101,8 +101,7 @@
   }
 
   .post-meta-wrapper {
-
-    @media(max-width: 667px) {
+    @media (max-width: 667px) {
       margin-top: 15px;
       margin-left: 70px;
     }
@@ -118,7 +117,7 @@
         &:not(:last-child) {
           margin-right: 50px;
 
-          @media(max-width: 991px) {
+          @media (max-width: 991px) {
             margin-right: 20px;
           }
         }
@@ -132,7 +131,7 @@
           }
 
           &:hover {
-            color: #41B782;
+            color: #41b782;
           }
         }
       }
@@ -147,7 +146,6 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid #f2f3f4;
-
     }
 
     .entry-content {
@@ -168,10 +166,7 @@
           }
 
           &:nth-child(2) {
-
-
             &:hover {
-
               a {
                 color: #b1b5c0;
               }
@@ -257,7 +252,7 @@
           color: #838793;
 
           &:hover {
-            color: #41B782;
+            color: #41b782;
           }
         }
       }
@@ -286,7 +281,7 @@
   font-weight: 500;
   height: 22px;
 
-  &:hover{
+  &:hover {
     color: #fff;
   }
 
@@ -341,7 +336,6 @@
   }
 }
 
-
 @keyframes slideDown {
   0% {
     transform: translate3d(0, 15px, 0);
@@ -351,7 +345,6 @@
     transform: translate3d(0, 23px, 0);
   }
 }
-
 
 .doc_border_btn.border-light {
   border-color: #cfebf1 !important;
@@ -363,7 +356,7 @@
   }
 
   &:hover {
-    border-color: #41B782 !important;
+    border-color: #41b782 !important;
 
     svg {
       path {
@@ -372,7 +365,6 @@
     }
   }
 }
-
 
 .pagination-wrapper {
   background: #fff;
@@ -384,7 +376,7 @@
   border-radius: 6px;
   box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.06);
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     display: block;
     text-align: center;
 
@@ -395,7 +387,6 @@
 
   p {
     margin: 0;
-
   }
 
   .post-pagination {
@@ -403,7 +394,7 @@
     padding: 0;
     list-style: none;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       margin-to: 30px;
     }
 
@@ -430,7 +421,7 @@
 
         &:hover,
         &.active {
-          background: #41B782;
+          background: #41b782;
           color: #fff;
         }
       }

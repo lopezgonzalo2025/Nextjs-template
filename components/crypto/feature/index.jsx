@@ -1,4 +1,4 @@
-import SingleFeatuer from "./SingleFeatuer";
+import SingleFeatuer from './SingleFeatuer'
 
 const index = () => {
   return (
@@ -9,7 +9,7 @@ const index = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default index;
+export default index

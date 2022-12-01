@@ -1,10 +1,10 @@
-import "swiper/css";
-import "swiper/css/navigation";
-import { HeadLine } from "../component";
-import "tippy.js/dist/tippy.css";
-import BidsCarousel from "../carousel/bidsCarousel";
+import 'swiper/css'
+import 'swiper/css/navigation'
+import { HeadLine } from '../component'
+import 'tippy.js/dist/tippy.css'
+import BidsCarousel from '../carousel/bidsCarousel'
 
-const Bids = ({ classes = "pt-10 pb-24", bgWhite }) => {
+const Bids = ({ classes = 'pt-10 pb-24', bgWhite }) => {
   return (
     <section className={classes}>
       {/* <!-- Hot Bids --> */}
@@ -31,7 +31,7 @@ const Bids = ({ classes = "pt-10 pb-24", bgWhite }) => {
       </div>
       {/* <!-- end hot bids --> */}
     </section>
-  );
-};
+  )
+}
 
-export default Bids;
+export default Bids

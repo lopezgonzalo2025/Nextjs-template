@@ -90,7 +90,7 @@ const DownloadAppBanner = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default DownloadAppBanner;
+export default DownloadAppBanner

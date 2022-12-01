@@ -1,6 +1,6 @@
-import HeadLine from "../headLine";
-import Image from "next/image";
-import DaoBlock from "./DaoBlock";
+import HeadLine from '../headLine'
+import Image from 'next/image'
+import DaoBlock from './DaoBlock'
 
 const NewseLatter2 = () => {
   return (
@@ -57,7 +57,7 @@ const NewseLatter2 = () => {
         {/* end call to action weekly digest */}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default NewseLatter2;
+export default NewseLatter2

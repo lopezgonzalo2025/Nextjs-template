@@ -5,9 +5,9 @@ const Address = () => {
         Information
       </h2>
       <p className="dark:text-jacarta-300 mb-6 text-lg leading-normal">
-        {
-          "Don't hesitaste, drop us a line Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services."
-        }
+        Don't hesitaste, drop us a line Collaboratively administrate channels
+        whereas virtual. Objectively seize scalable metrics whereas proactive
+        e-services.
       </p>
 
       <div className="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 rounded-2.5xl border bg-white p-10">
@@ -90,7 +90,7 @@ const Address = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Address;
+export default Address
