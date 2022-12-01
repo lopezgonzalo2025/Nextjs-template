@@ -1,8 +1,6 @@
-name: 'Develop Pull Request'
+name: 'Pull Request'
 'on':
   pull_request:
-    branches:
-      - develop
 
 jobs:
   lint_and_prettier:

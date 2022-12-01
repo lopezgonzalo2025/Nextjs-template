@@ -1,12 +1,12 @@
 module.exports = {
   extends: ['next/core-web-vitals'],
   rules: {
-    semi: ['error', 'never'], // ;
-    'comma-dangle': ['error', 'never'], // [1,]
+    semi: ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
     'no-unused-vars': [
       'error',
       {
-        // _ is a valid argument name for unused arguments in a function
+        // _ is valid for unused function arguments
         argsIgnorePattern: '^_$'
       }
     ],
@@ -15,6 +15,7 @@ module.exports = {
     'no-alert': 'error',
     quotes: ['error', 'single', { avoidEscape: true }],
     '@next/next/no-img-element': 'off',
-    'react/no-unescaped-entities': 'off'
+    'react/no-unescaped-entities': 'off',
+    'no-undef': 'error'
   }
 }
