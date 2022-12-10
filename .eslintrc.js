@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['next/core-web-vitals'],
+  plugins: ['simple-import-sort'],
   rules: {
     semi: ['error', 'never'], // ;
     'comma-dangle': ['error', 'never'], // [1,]
@@ -14,6 +15,8 @@ module.exports = {
     'no-param-reassign': 'error',
     'no-console': 'warn',
     'no-alert': 'error',
-    quotes: ['error', 'single']
+    quotes: ['error', 'single'],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error'
   }
 }
