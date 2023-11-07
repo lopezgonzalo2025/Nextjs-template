@@ -5,8 +5,8 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { render } from '@testing-library/react'
 
-import Index from '../pages/index'
-import { Home } from '../pages/index'
+import Index from '../src/app/page'
+import { Home } from '../src/app/page'
 
 describe('<Index />', () => {
   let component: any
@@ -29,67 +29,10 @@ describe('<Index />', () => {
     // Debug the component to see the HTML output in the console (useful for debugging)
     // component.debug()
 
-    const textsToSearch = [
-      'Welcome to',
-      'Get started by editing',
-      'pages/index.tsx',
-      'Documentation →',
-      'Learn →',
-      'Examples →',
-      'Deploy →',
-      'Powered by'
-    ]
+    const textsToSearch = ['Home']
 
     textsToSearch.forEach((text) => {
       component.getByText(text)
-    })
-
-    const logo = component.container.querySelector('footer a span img')
-    if (logo) {
-      expect(logo).toHaveAttribute('src', '/vercel.svg')
-    } else {
-      throw new Error('Logo not found')
-    }
-  })
-  test('Links', () => {
-    const links = [
-      {
-        href: 'https://nextjs.org',
-        text: 'Next.js!'
-      },
-      {
-        href: 'https://nextjs.org/docs',
-        text: 'Documentation →'
-      },
-      {
-        href: 'https://nextjs.org/learn',
-        text: 'Learn →'
-      },
-      {
-        href: 'https://github.com/vercel/next.js/tree/canary/examples',
-        text: 'Examples →'
-      },
-      {
-        href: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app',
-        text: 'Deploy →'
-      },
-      {
-        href: 'https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app',
-        text: 'Powered by'
-      }
-    ]
-
-    const allA = component.container.querySelectorAll('a')
-    allA.forEach((a: any) => {
-      const { textContent } = a
-
-      const link = links.find(({ text }) => textContent?.includes(text))
-
-      if (link) {
-        expect(a).toHaveAttribute('href', link.href)
-      } else {
-        throw new Error('Link not found')
-      }
     })
   })
 })
