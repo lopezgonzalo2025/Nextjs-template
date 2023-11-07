@@ -99,7 +99,6 @@ exports[`<Index /> Snapshots 1`] = `
             height="16"
             loading="lazy"
             src="/vercel.svg"
-            srcset="/vercel.svg 1x, /vercel.svg 2x"
             style="color: transparent;"
             width="72"
           />
